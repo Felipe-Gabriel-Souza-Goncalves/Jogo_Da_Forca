@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <span>Temas:</span>
+        <select name="" id="temas">
+            <option value="transporte">transporte</option>
+            <option value="comida">comida</option>
+            <option value="profissão">profissão</option>
+            <option value="país">país</option>
+            <option value="esporte">esporte</option>
+            <option value="instrumento">instrumento</option>
+            <option value="animal">animal</option>
+        </select>
+        <button onclick="prepararJogo()">Jogar</button>
+
+        <div id="area">
+            <img id="forca" src="imgs/forca-5-vidas.png" width="350" alt="">
+            <div id="placeholderPalavra">
+
+            </div>
+        </div>
+
+        <div id="teclado">
+            <button class="tecla" onclick="mandarLetra('q', this)">
+                q
+            </button>
+            <button class="tecla" onclick="mandarLetra('w', this)">
+                w
+            </button>
+            <button class="tecla" onclick="mandarLetra('e', this)">
+                e
+            </button>
+            <button class="tecla" onclick="mandarLetra('r', this)">
+                r
+            </button>
+            <button class="tecla" onclick="mandarLetra('t', this)">
+                t
+            </button>
+            <button class="tecla" onclick="mandarLetra('y', this)">
+                y
+            </button>
+            <button class="tecla" onclick="mandarLetra('u', this)">
+                u
+            </button>
+            <button class="tecla" onclick="mandarLetra('i', this)">
+                i
+            </button>
+            <button class="tecla" onclick="mandarLetra('o', this)">
+                o
+            </button>
+            <button class="tecla" onclick="mandarLetra('p', this)">
+                p
+            </button> <br>
+            <button class="tecla" onclick="mandarLetra('a', this)">
+                a
+            </button>
+            <button class="tecla" onclick="mandarLetra('s', this)">
+                s
+            </button>
+            <button class="tecla" onclick="mandarLetra('d', this)">
+                d
+            </button>
+            <button class="tecla" onclick="mandarLetra('f', this)">
+                f
+            </button>
+            <button class="tecla" onclick="mandarLetra('g', this)">
+                g
+            </button>
+            <button class="tecla" onclick="mandarLetra('h', this)">
+                h
+            </button>
+            <button class="tecla" onclick="mandarLetra('j', this)">
+                j
+            </button>
+            <button class="tecla" onclick="mandarLetra('k', this)">
+                k
+            </button>
+            <button class="tecla" onclick="mandarLetra('l', this)">
+                l
+            </button> <br>
+            <button class="tecla" onclick="mandarLetra('z', this)">
+                z
+            </button>
+            <button class="tecla" onclick="mandarLetra('x', this)">
+                x
+            </button>
+            <button class="tecla" onclick="mandarLetra('c', this)">
+                c
+            </button>
+            <button class="tecla" onclick="mandarLetra('v', this)">
+                v
+            </button>
+            <button class="tecla" onclick="mandarLetra('b', this)">
+                b
+            </button>
+            <button class="tecla" onclick="mandarLetra('n', this)">
+                n
+            </button>
+            <button class="tecla" onclick="mandarLetra('m', this)">
+                m
+            </button>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
