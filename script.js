@@ -3,7 +3,7 @@ var palavra = null
 var vidas = 5
 
 function prepararJogo(){
-    
+    document.getElementById("teclado").style.display= "block"
     vidas = 5
     document.getElementById("forca").src = `imgs/forca-5-vidas.png`
     var tema = document.getElementById("temas").value
@@ -14,7 +14,6 @@ function prepararJogo(){
         tecla[index].disabled = false   
         tecla[index].classList.remove("certo")
     }
-
     gerarPalavra(tema)
 }
 
@@ -57,10 +56,23 @@ function correcao(existeLetra, e){
         e.disabled = true
         vidas--
         document.getElementById("forca").src = `imgs/forca-${vidas}-vidas.png`
-
     }
     if(vidas == 0){
         alert("VOCê PERDEU O JOGO!")
         document.getElementById("teclado").style.display= "none"
     }
+    ganhar()
+}
+
+function ganhar(){
+    var u = document.querySelectorAll('u')
+    for(let i =0; i< u.length;i++){
+        if(u[i].innerHTML == "&nbsp;&nbsp;&nbsp;"){
+            return
+        }
+    }
+
+    alert("PARABENS!!!" + "\nVidas restantes: " + vidas)
+    document.getElementById("teclado").style.display= "none"
+
 }
